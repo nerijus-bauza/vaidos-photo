@@ -1,0 +1,1 @@
+# Vaida's photography website

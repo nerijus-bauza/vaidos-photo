@@ -1,0 +1,48 @@
+:root {
+  --color-main-light: #eeee;
+
+
+  --font-secondary: 'Cormorant Garamond', serif;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;  
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {  
+  color: var(--color-main-light);
+  font-family: var(--font-secondary);
+  
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to right bottom,
+                    rgba(0,0,0,0.9),
+                    rgba(0,0,0,0.7));
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  font-size: 2rem;
+}
