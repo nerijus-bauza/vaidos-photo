@@ -1,0 +1,23 @@
+{
+  "name": "vaidos-photo-page",
+  "version": "1.0.0",
+  "description": "Landing page for vaidos-photo-page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass -w sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerijus-bauza/vaidos-photo.git"
+  },
+  "author": "Nerijus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerijus-bauza/vaidos-photo/issues"
+  },
+  "homepage": "https://github.com/nerijus-bauza/vaidos-photo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
