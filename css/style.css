@@ -16,9 +16,9 @@
   --backdrop-filter-nav-resp-bg: blur(5px);
   --font-size-slide: 2.5rem;
   --font-weigth-slide: 500;
-  --slide-img-1: url(../img/hero-bg-big-1.jpg);
-  --slide-img-2: url(../img/hero-bg-big-2.jpg);
-  --slide-img-3: url(../img/hero-bg-big-3.jpg);
+  --slide-img-1: url("../img/hero-bg-big-1.jpg");
+  --slide-img-2: url("../img/hero-bg-big-2.jpg");
+  --slide-img-3: url("../img/hero-bg-big-3.jpg");
   --color-bg-slideshow-btn: rgba(0,0,0,0.5); }
 
 *,
