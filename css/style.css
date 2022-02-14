@@ -16,9 +16,6 @@
   --backdrop-filter-nav-resp-bg: blur(5px);
   --font-size-slide: 2.5rem;
   --font-weigth-slide: 500;
-  --slide-img-1: url("../img/hero-bg-big-1-opt.jpg");
-  --slide-img-2: url("../img/hero-bg-big-2-opt.jpg");
-  --slide-img-3: url("../img/hero-bg-big-3-opt.jpg");
   --color-bg-slideshow-btn: rgba(0,0,0,0.5); }
 
 *,
@@ -65,11 +62,11 @@ a:visited {
     background-position: center;
     display: none; }
     .slideshow__slide--1 {
-      background-image: var(--slide-img-1); }
+      background-image: url("../img/hero-bg-big-1-opt.jpg"); }
     .slideshow__slide--2 {
-      background-image: var(--slide-img-2); }
+      background-image: url("../img/hero-bg-big-2-opt.jpg"); }
     .slideshow__slide--3 {
-      background-image: var(--slide-img-3); }
+      background-image: url("../img/hero-bg-big-3-opt.jpg"); }
   .slideshow__slide-overlay {
     position: absolute;
     left: 0;
