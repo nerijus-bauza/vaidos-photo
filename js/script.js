@@ -6,14 +6,16 @@ const navResp = document.getElementById('navResp');
 
 navRespTogleOpen.addEventListener('click', function(){
   navResp.classList.toggle('show_nav-resp');
+  console.log('Open nav button pressed');
 });
 navRespTogleClose.addEventListener('click', function(){
   navResp.classList.toggle('show_nav-resp');
+  console.log('Close nav button pressed');
 });
 
 document.querySelectorAll('.nav-resp__link').forEach(item => {
   item.addEventListener('click', event => {
-    navResp.classList.toggle('show_nav-resp');
+    navResp.classList.toggle('show_nav-resp');    
   })
 })
 

@@ -14,3 +14,37 @@ a:visited {
   color: inherit;
   display: inline-block;
 }
+
+
+// NAVIGATION
+.nav-wrapper {
+  color: var(--color-main-text);
+}
+
+.nav {  
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weigth-nav);
+
+  &__logo,
+  &__link--logo {
+    font-family: var(--font-logo);
+    font-size: var(--font-size-logo);
+    font-weight: 500;
+  }
+}
+
+.nav-resp {
+  --color-main-text: var(--color-nav-resp-text); //overwrite link underline effect color
+  color: var(--color-nav-resp-text);
+  font-size: var(--font-size-nav-resp);
+  font-weight: var(--font-weigth-nav-resp);
+}
+
+// SLIDESHOW
+.slideshow {
+  &__slide-text {
+    font-size: var(--font-size-slide);
+    font-weight: var(--font-weigth-slide);
+    color: var(--color-main-text);
+  }
+}
