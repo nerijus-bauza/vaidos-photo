@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%; 
+}
+
+body {  
+  color: var(--color-main-text);
+  font-family: var(--font-secondary);  
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}

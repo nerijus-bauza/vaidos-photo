@@ -1,0 +1,51 @@
+:root {
+  //--color-main-text: #222e;
+  --color-main-text: #eeee;
+
+  //--color-main-background: rgba(255,255,255,1);
+  //--color-main-background: rgba(0,0,0,0.5);
+  --color-main-background: transparent;
+  
+  --color-shadow: rgba(0,0,0,0.9);
+  //--color-shadow: rgba(255,255,255,0.5);
+
+  //--backdrop-filter: blur(5px);
+  --backdrop-filter: none;
+
+  --text-shadow-nav-links: 0px 0px 8px rgba(0,0,0,0.5);
+  //--text-shadow-nav-links: none;
+
+  --box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+
+  --font-secondary: 'Comfortaa', cursive;
+  --font-secondary: 'Cinzel', serif;
+
+  //--font-secondary: 'Montserrat', sans-serif;
+  //--font-secondary: 'Quicksand', sans-serif;
+  
+
+  --font-logo: 'Birthstone Bounce', cursive;
+  --font-size-logo: 4rem;
+
+  --font-size-nav: 2.5rem;
+  --font-weigth-nav: 500;
+
+  --color-nav-resp-bg: rgba(255,255,255,0.8);
+  --color-nav-resp-text: #222e;
+  --backdrop-filter-nav-resp-bg: blur(5px);
+  
+
+  // slideshow
+  --font-size-slide: 2.5rem;  
+  --font-weigth-slide: 500;
+
+  //--slide-img-1: url("../img/hero-bg-big-1.jpg");
+  //--slide-img-2: url("../img/hero-bg-big-2.jpg");
+  //--slide-img-3: url("../img/hero-bg-big-3.jpg");
+
+  //--slide-img-1: url("../img/hero-bg-big-1-opt.jpg");
+  //--slide-img-2: url("../img/hero-bg-big-2-opt.jpg");
+  //--slide-img-3: url("../img/hero-bg-big-3-opt.jpg");
+
+  --color-bg-slideshow-btn: rgba(0,0,0,0.5);
+}
