@@ -10,7 +10,7 @@ body {
 a,
 a:link,
 a:visited {
-  text-decoration: none;
+  //text-decoration: none;
   color: inherit;
   display: inline-block;
 }
@@ -25,6 +25,8 @@ a:visited {
   font-size: var(--font-size-nav);
   font-weight: var(--font-weigth-nav);
 
+  & a { text-decoration: none; }
+
   &__logo,
   &__link--logo {
     font-family: var(--font-logo);
@@ -38,13 +40,27 @@ a:visited {
   color: var(--color-nav-resp-text);
   font-size: var(--font-size-nav-resp);
   font-weight: var(--font-weigth-nav-resp);
+
+  & a { text-decoration: none; }
 }
 
 // SLIDESHOW
 .slideshow {
-  &__slide-text {
-    font-size: var(--font-size-slide);
-    font-weight: var(--font-weigth-slide);
+  &__slide-text-box {
+    
     color: var(--color-main-text);
+  }
+  &__slide-text-caption {
+    font-size: var(--font-size-slide-caption);
+    font-weight: var(--font-weigth-slide);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  &__slide-text-link {
+    font-family: var(--font-family-slide-link);
+    font-size: var(--font-size-slide-link);
+    font-weight: var(--font-weigth-slide-link);
+    text-decoration: underline;
+    white-space: nowrap;
   }
 }

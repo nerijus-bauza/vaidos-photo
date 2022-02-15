@@ -39,7 +39,36 @@
   
 
   // SLIDESHOW
-  --font-size-slide: 2.25rem;  
-  --font-weigth-slide: 400;
+  --font-size-slide-caption: 2.25rem;  
+  --font-weigth-slide-caption: 400;
+  
+  --font-family-slide-link: 'Montserrat', sans-serif;
+  --font-size-slide-link: 1.5rem;
+  --font-weigth-slide-link: 400;
+
+  --slideshow-nav-btn-height: 6rem;
+  --slideshow-nav-btn-width: 8rem;
+  --slideshow-nav-btn-margin: 2rem;
+  --slideshow-nav-btn-padding: 0.3rem 0.3rem;
+  
   --color-bg-slideshow-btn: rgba(0,0,0,0.5);
+  
+  --slideshow-nav-height: 10rem;
+  --slideshow-nav-border: 2px solid var(--color-main-text);
+  
+  @media screen and (max-width: 1100px) {
+    --slideshow-nav-height: 8rem;
+    --slideshow-nav-border: none;
+  }
+  @media screen and (max-width: 450px) {
+    --font-size-slide-caption: 1.75rem;
+    --font-size-slide-link: 1.2rem;
+    --slideshow-nav-btn-width: 4rem;
+    --slideshow-nav-btn-height: 4rem;
+    --slideshow-nav-btn-margin: 1rem;
+    
+  }
+  
+  
+  
 }
