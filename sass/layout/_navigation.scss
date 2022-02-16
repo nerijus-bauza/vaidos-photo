@@ -1,13 +1,26 @@
 
 .nav-wrapper {
-  background: var(--color-main-background);
+  background-color: var(--color-main-background);
   backdrop-filter: var(--backdrop-filter);
 
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0; left: 0; right: 0;
   padding: 0.5rem 1rem;
-  z-index: 50;  
+  z-index: 50;
+  transition: top 0.3s;
+  //border: 1px solid orangered;
+}
+
+.nav-wrapper--scrolled-bottom {
+  background-color: var(--color-main-background-light);
+  backdrop-filter: var(--backdrop-filter-nav);
+  color: var(--color-main-text-dark);
+  --color-nav: var(--color-main-text-dark);
+  --color-nav-link-underline: var(--color-main-text-dark);
+  --border-nav: none;
+  border-bottom: 2px solid var(--color-main-text-dark);
+  padding: 0 1rem;
 }
 
 .nav {  
@@ -30,8 +43,8 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
-    border-top: 2px solid var(--color-main-text);
-    border-bottom: 2px solid var(--color-main-text);
+    border-top: var(--border-nav);
+    border-bottom: var(--border-nav);
   }
 
   &__item {
@@ -56,9 +69,8 @@
       height: 100%;
       position: absolute;
       top: 2px; left: 0;
-      z-index: -1;      
-      //border-top: 1px solid var(--color-main-text);
-      border-bottom: 1px solid var(--color-main-text);
+      z-index: -1;
+      border-bottom: 1px solid var(--color-nav-link-underline);
       transform: scaleX(0);
       transition: all 0.2s;
     }
@@ -83,7 +95,7 @@
     &-icon {
       width: 100%;
       height: 100%;
-      fill: var(--color-main-text);
+      fill: var(--color-nav);
       position: absolute;
       top: 0; left: 0;
       transition: all 0.4s;
@@ -120,7 +132,7 @@
   height: 100vh;
   
   background-color: var(--color-nav-resp-bg);
-  backdrop-filter: var(--backdrop-filter-nav-resp-bg);
+  backdrop-filter: var(--backdrop-filter-nav);  
 
   display: none;
 }

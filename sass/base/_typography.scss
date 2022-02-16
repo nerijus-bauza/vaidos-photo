@@ -18,7 +18,7 @@ a:visited {
 
 // NAVIGATION
 .nav-wrapper {
-  color: var(--color-main-text);
+  color: var(--color-nav);
 }
 
 .nav {  
@@ -36,7 +36,7 @@ a:visited {
 }
 
 .nav-resp {
-  --color-main-text: var(--color-nav-resp-text); //overwrite link underline effect color
+  --color-nav-link-underline: var(--color-nav-resp-text); //overwrite link underline effect color
   color: var(--color-nav-resp-text);
   font-size: var(--font-size-nav-resp);
   font-weight: var(--font-weigth-nav-resp);

@@ -1,11 +1,15 @@
 :root {
   //--color-main-text: #222e;
   --color-main-text: #eeee;
+  --color-main-text-dark: #222e;
 
   //--color-main-background: rgba(255,255,255,1);
   //--color-main-background: rgba(0,0,0,0.5);
   --color-main-background: transparent;
+  --color-main-background-light: rgba(255,255,255,0.7);
   
+
+
   --color-shadow: rgba(0,0,0,0.9);
   //--color-shadow: rgba(255,255,255,0.5);
 
@@ -29,13 +33,17 @@
 
   --font-size-nav: 2.5rem;
   --font-weigth-nav: 500;
+  --border-nav: 2px solid var(--color-main-text);
+  
+  --color-nav: var(--color-main-text);
+  --color-nav-link-underline: var(--color-main-text);
 
   // RESP-NAVIGATION
   --color-nav-resp-bg: rgba(255,255,255,0.8);
   --color-nav-resp-text: #222e;
   --font-size-nav-resp: 3rem;
   --font-weigth-nav-resp: 400;
-  --backdrop-filter-nav-resp-bg: blur(5px);
+  --backdrop-filter-nav: blur(5px);
   
 
   // SLIDESHOW

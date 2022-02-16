@@ -2,15 +2,15 @@
 
 const navRespTogleOpen = document.getElementById('navRespTogleButtonOpen');
 const navRespTogleClose = document.getElementById('navRespTogleButtonClose');
-const navResp = document.getElementById('navResp');
+const navResp = document.getElementById('nav-resp-wrapper');
 
 navRespTogleOpen.addEventListener('click', function(){
   navResp.classList.toggle('show_nav-resp');
-  console.log('Open nav button pressed');
+  //console.log('Open nav button pressed');
 });
 navRespTogleClose.addEventListener('click', function(){
   navResp.classList.toggle('show_nav-resp');
-  console.log('Close nav button pressed');
+  //console.log('Close nav button pressed');
 });
 
 document.querySelectorAll('.nav-resp__link').forEach(item => {
@@ -23,9 +23,6 @@ document.querySelectorAll('.nav-resp__link').forEach(item => {
 
 var slideIndex = 1;
 showSlides(slideIndex);
-
-// Next/previous controls
-
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -53,10 +50,27 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// --------------------
+const nav = document.getElementById('nav-wrapper');
+const navTopOffset = nav.offsetTop;
+const navHeight = nav.offsetHeight;
+const changeColorHeight = document.getElementById('slideshow').offsetHeight - navHeight;
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > navTopOffset || document.documentElement.scrollTop > navTopOffset) {
+    nav.style.top = "0";
+    //document.getElementById("nav-wrapper").style.top = "0";
+    //document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    nav.style.top = navTopOffset + "px";
+    //document.getElementById("nav-wrapper").style.top = "60px";
+    //document.getElementById("logo").style.fontSize = "35px";
+  }
 
-// const slideshowBtnPrev = document.getElementById('slideshow-nav-btn-prev');
-// const slideshowBtnNext = document.getElementById('slideshow-nav-btn-next');
-
-// slideshowBtnPrev.addEventListener('click', plusSlides(-1));
-// slideshowBtnNext.addEventListener('click', plusSlides(1));
+  if (document.body.scrollTop > changeColorHeight || document.documentElement.scrollTop > changeColorHeight) {
+    nav.classList.add("nav-wrapper--scrolled-bottom");
+  } else {
+    nav.classList.remove("nav-wrapper--scrolled-bottom");
+  }
+}
