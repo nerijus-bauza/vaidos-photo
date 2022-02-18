@@ -7,4 +7,4 @@ Techhnologies used:
 * HTML
 * SCSS
 * BEM
-* Vanila JavaScript
+* Vanilla JavaScript
