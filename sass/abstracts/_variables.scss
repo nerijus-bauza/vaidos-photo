@@ -1,12 +1,13 @@
 :root {
-  //--color-main-text: #222e;
-  --color-main-text: #eeee;
+  --color-main-text: #222e;
+  --color-main-text-light: #eeee;
   --color-main-text-dark: #222e;
 
   //--color-main-background: rgba(255,255,255,1);
   //--color-main-background: rgba(0,0,0,0.5);
   --color-main-background: transparent;
   --color-main-background-light: rgba(255,255,255,0.7);
+  --color-main-background-dark: rgba(0,0,0,0.7);
   
 
 
@@ -22,6 +23,7 @@
   --box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
 
   //--font-secondary: 'Comfortaa', cursive;
+  --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Cinzel', serif;
 
   //--font-secondary: 'Montserrat', sans-serif;
@@ -33,14 +35,14 @@
 
   --font-size-nav: 2.5rem;
   --font-weigth-nav: 500;
-  --border-nav: 2px solid var(--color-main-text);
+  --border-nav: 2px solid var(--color-main-text-light);
   
-  --color-nav: var(--color-main-text);
-  --color-nav-link-underline: var(--color-main-text);
+  --color-nav: var(--color-main-text-light);
+  --color-nav-link-underline: var(--color-main-text-light);
 
   // RESP-NAVIGATION
   --color-nav-resp-bg: rgba(255,255,255,0.8);
-  --color-nav-resp-text: #222e;
+  --color-nav-resp-text: var(--color-main-text-dark);
   --font-size-nav-resp: 3rem;
   --font-weigth-nav-resp: 400;
   --backdrop-filter-nav: blur(5px);
@@ -50,7 +52,7 @@
   --font-size-slide-caption: 2.25rem;  
   --font-weigth-slide-caption: 400;
   
-  --font-family-slide-link: 'Montserrat', sans-serif;
+  --font-family-slide-link: var(--font-primary);
   --font-size-slide-link: 1.5rem;
   --font-weigth-slide-link: 400;
 
@@ -62,7 +64,7 @@
   --color-bg-slideshow-btn: rgba(0,0,0,0.5);
   
   --slideshow-nav-height: 10rem;
-  --slideshow-nav-border: 2px solid var(--color-main-text);
+  --slideshow-nav-border: 2px solid var(--color-main-text-light);
   
   @media screen and (max-width: 1100px) {
     --slideshow-nav-height: 8rem;
@@ -77,6 +79,11 @@
     
   }
   
-  
+  // CONTACT
+  //--color-bg-contact-box: var(--color-main-background-dark);
+  --color-bg-contact-box: var(--color-main-background-light);
+  //--color-text-contact-box: var(--color-main-text-light);
+  --color-text-contact-box: var(--color-main-text-dark);
+  --box-shadow-contact-box: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 }
