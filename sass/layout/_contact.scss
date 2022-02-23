@@ -20,41 +20,99 @@
     max-width: 120rem;
     width: 120rem; 
     //height: 65vh;
-
-    padding: 3rem;
+    
     border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    box-shadow: var(--box-shadow-contact-box);
 
     display: flex;
-
-    font-size: 1.6rem;
-
-    box-shadow: var(--box-shadow-contact-box);
+    flex-direction: column;
   }
 
   &__box-part {
     width: 100%;
+    padding: 1.5rem;
+    //border: 1px solid olive;
     
   }
   
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  // CONTACT ME LINKS part
   &__icon {    
     color: var(--color-text-contact-box); 
   }
 
   &__method-link-wrapper {
     display: flex;
-    align-items: center;    
+    align-items: center;
+    //border: 1px solid red;
+    width: fit-content;
   }
   &__method-link {
     font-size: inherit;
     text-decoration: none;
     width: 100%;
-    display: block; 
+    display: block;
     
     //border: 1px solid blue;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     
   }
   &__method-text {    
     margin-left: 1rem;
   }
+
+
+  // CONTACT ME FORM part
+  &__form {
+    width: 100%;
+  }
+  &__form-field:not(:last-child) {
+    margin-bottom: 1rem;
+    
+  }
+  &__form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  &__form-input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-text-contact-box);
+    border-radius: 3px;
+
+    &--text {
+      width: 100%;
+    }
+    &--btn {
+      //width: 100%;
+      color: var(--color-bg-contact-box);
+      background-color: var(--color-text-contact-box);
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        transform: translateY(-2px);
+        box-shadow: var(--box-shadow-contact-box);
+      }
+      
+    }
+  }
+}
+
+.contact__box-spacer { height: 4rem; }
+
+@media screen and (min-width: 570px) {
+  .contact__box { flex-direction: row; }
+  .contact__box-spacer { height: 2rem; }
+  .contact__header { margin-bottom: 2rem; }
+  .contact__method-link { margin-bottom: 2rem; }
+  .contact__form-field:not(:last-child) { margin-bottom: 2rem; }
+  .contact__box-part { padding: 3rem 3rem; }
 }

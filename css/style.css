@@ -162,9 +162,6 @@ p {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
-.u-vert-spacer {
-  height: 4rem; }
-
 .nav-wrapper {
   background-color: var(--color-main-background);
   backdrop-filter: var(--backdrop-filter);
@@ -324,26 +321,71 @@ p {
     backdrop-filter: blur(5px);
     max-width: 120rem;
     width: 120rem;
-    padding: 3rem;
     border-radius: 3px;
-    display: flex;
     font-size: 1.6rem;
-    box-shadow: var(--box-shadow-contact-box); }
+    padding: 1rem 0;
+    box-shadow: var(--box-shadow-contact-box);
+    display: flex;
+    flex-direction: column; }
   .contact__box-part {
-    width: 100%; }
+    width: 100%;
+    padding: 1.5rem; }
+  .contact__header {
+    margin-bottom: 1rem; }
   .contact__icon {
     color: var(--color-text-contact-box); }
   .contact__method-link-wrapper {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    width: fit-content; }
   .contact__method-link {
     font-size: inherit;
     text-decoration: none;
     width: 100%;
     display: block;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .contact__method-text {
     margin-left: 1rem; }
+  .contact__form {
+    width: 100%; }
+  .contact__form-field:not(:last-child) {
+    margin-bottom: 1rem; }
+  .contact__form-label {
+    display: block;
+    margin-bottom: 0.5rem; }
+  .contact__form-input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-text-contact-box);
+    border-radius: 3px; }
+    .contact__form-input--text {
+      width: 100%; }
+    .contact__form-input--btn {
+      color: var(--color-bg-contact-box);
+      background-color: var(--color-text-contact-box);
+      padding: 0.5rem 2rem;
+      cursor: pointer; }
+      .contact__form-input--btn:hover, .contact__form-input--btn:focus {
+        transform: translateY(-2px);
+        box-shadow: var(--box-shadow-contact-box); }
+
+.contact__box-spacer {
+  height: 4rem; }
+
+@media screen and (min-width: 570px) {
+  .contact__box {
+    flex-direction: row; }
+  .contact__box-spacer {
+    height: 2rem; }
+  .contact__header {
+    margin-bottom: 2rem; }
+  .contact__method-link {
+    margin-bottom: 2rem; }
+  .contact__form-field:not(:last-child) {
+    margin-bottom: 2rem; }
+  .contact__box-part {
+    padding: 3rem 3rem; } }
 
 .slideshow {
   width: 100%;

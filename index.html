@@ -123,8 +123,8 @@
       <section class="contact" id="contact">
         
         <div class="contact__box">
-          <div class="contact__box-part contact__box-part--1">
-            <h2>Susisiekime</h2>
+          <div class="contact__box-part">
+            <h2 class="contact__header">Susisiekime</h2>
             
             <a class="contact__method-link" href="tel:+37067142252">
               <div class="contact__method-link-wrapper">
@@ -140,9 +140,9 @@
               </div>              
             </a>
 
-            <div class="u-vert-spacer"></div>
+            <div class="contact__box-spacer"></div>
 
-            <h2>Sekite mane</h2>
+            <h2 class="contact__header">Mane rasite</h2>
 
             <a class="contact__method-link" href="">
               <div class="contact__method-link-wrapper">
@@ -163,10 +163,40 @@
           </div>
           
 
-          <div class="contact__box-part contact__box-part--2">
-            <h2>Parašykite man</h2>
-          </div>
-          
+          <div class="contact__box-part">
+            <h2 class="contact__header">Parašykite man</h2>
+
+            <form action="" class="contact__form">
+              
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="name">Jūsų vardas:</label>
+                <input class="contact__form-input contact__form-input--text" type="text" id="name" name="name" placeholder="Vardas" required>
+              </div>              
+              
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="email">Jūsų el. paštas:</label>
+                <input class="contact__form-input contact__form-input--text" type="email" id="email" name="email" placeholder="elektroninis@paštas.com" required>
+              </div>
+
+              <!--
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="date">Fotosesijos data:</label>
+                <input class="contact__form-input" type="date" id="date" name="date" value="" min="2022-01-01" max="2030-12-31">
+              </div>
+              -->
+
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="message">Jūsų žinutė:</label>
+                <textarea class="contact__form-input contact__form-input--text" id="message" name="message" rows="5" cols="50"></textarea>
+              </div>
+
+              <div class="contact__form-field">
+                <input class="contact__form-input contact__form-input--btn" type="submit" value="Siųsti">
+              </div>
+              
+            </form>
+
+          </div>          
       
         </div>
         
