@@ -305,6 +305,28 @@ p {
   .nav__items {
     display: flex; } }
 
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px; }
+  .portfolio__column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 5px; }
+  .portfolio__img {
+    margin-top: 8px;
+    width: 100%; }
+
+@media screen and (min-width: 800px) {
+  .portfolio__column {
+    flex: 50%;
+    max-width: 50%; } }
+
+@media screen and (min-width: 1200px) {
+  .portfolio__column {
+    flex: 25%;
+    max-width: 25%; } }
+
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -455,6 +477,11 @@ p {
   width: 100%;
   height: 500vh;
   position: relative; }
+
+.portfolio-section {
+  margin: 5rem auto;
+  max-width: 95vw;
+  text-align: justify; }
 
 .testing-section {
   margin: 5rem auto;
