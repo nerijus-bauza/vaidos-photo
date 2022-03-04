@@ -74,3 +74,48 @@ function scrollFunction() {
     nav.classList.remove("nav-wrapper--scrolled-bottom");
   }
 }
+
+// LIGHTBOX
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideLBIndex = 1;
+showLBSlides(slideLBIndex);
+
+// Next/previous controls
+function plusLBSlides(n) {
+  showLBSlides(slideLBIndex += n);
+}
+
+// Thumbnail image controls
+function currentLBSlide(n) {
+  showLBSlides(slideLBIndex = n);
+}
+
+function showLBSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("lightbox__slide");
+  //var dots = document.getElementsByClassName("demo");
+  //var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideLBIndex = 1}
+  if (n < 1) {slideLBIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  /*
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  */
+  slides[slideLBIndex-1].style.display = "block";
+  //dots[slideLBIndex-1].className += " active";
+  //captionText.innerHTML = dots[slideLBIndex-1].alt;
+}

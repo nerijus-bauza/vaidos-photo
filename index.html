@@ -94,35 +94,101 @@
     
     <main class="main">
 
+      <!-- PORTFOLIO SECTION -->
       <section class="portfolio-section" id="portfolio">
         <h2>Portfolio</h2>
         
         <div class="portfolio">
           <div class="portfolio__column">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_04.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_02.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_01.jpg" alt="portfolio photo">            
+            <img class="portfolio__img" src="./img/portfolio/portfolio_04.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(1)">            
+            <img class="portfolio__img" src="./img/portfolio/portfolio_01.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(2)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_14.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(3)">            
           </div>
 
           <div class="portfolio__column">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_03.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_05.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_12.jpg" alt="portfolio photo">            
+            <img class="portfolio__img" src="./img/portfolio/portfolio_03.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(4)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_05.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(5)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_12.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(6)">            
           </div>
 
           <div class="portfolio__column">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_07.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_08.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_09.jpg" alt="portfolio photo">            
+            <img class="portfolio__img" src="./img/portfolio/portfolio_07.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(7)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_08.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(8)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_09.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(9)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_02.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(10)">            
           </div>
 
           <div class="portfolio__column">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_10.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_11.jpg" alt="portfolio photo">
-            <img class="portfolio__img" src="./img/portfolio/portfolio_06.jpg" alt="portfolio photo">            
+            <img class="portfolio__img" src="./img/portfolio/portfolio_10.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(11)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_11.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(12)">
+            <img class="portfolio__img" src="./img/portfolio/portfolio_06.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(13)">            
           </div>
 
         </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="lightbox">
+          
+          <div class="lightbox__content">
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_04.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_01.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_14.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_03.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_05.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_12.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_07.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_08.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_09.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_02.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_10.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_11.jpg">
+            </div>
+            <div class="lightbox__slide">
+              <img class="lightbox__img" src="./img/portfolio/portfolio_06.jpg">
+            </div>
+
+            
+
+            <!-- Next/previous controls -->
+            <span class="lightbox__btn-close" onclick="closeModal()">&times;</span>
+            <a class="lightbox__btn-prev" onclick="plusLBSlides(-1)">&#10094;</a>
+            <a class="lightbox__btn-next" onclick="plusLBSlides(1)">&#10095;</a>
+
+            
+            <!-- Caption text -->
+            <!--
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            -->
+
+          </div>
+        </div>
+
+
       </section>
 
       <section class="gallery testing-section" id="galleries">
