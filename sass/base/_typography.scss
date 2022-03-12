@@ -12,14 +12,21 @@ a:link,
 a:visited {
   //text-decoration: none;
   color: inherit;
-  display: inline-block;
+  
 }
 
-.section-link {
+.section-link,
+.section-link:link,
+.section-link:visited {
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 2rem;
   transition: all 0.2s;
+
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 5rem;  
 
   &:hover {
     transform: translateX(3px);
