@@ -64,7 +64,7 @@
   --color-bg-slideshow-btn: rgba(0,0,0,0.5);
   
   --slideshow-nav-height: 10rem;
-  --slideshow-nav-border: 2px solid var(--color-main-text-light);
+  --slideshow-nav-border: var(--border-nav);
   
   @media screen and (max-width: 1100px) {
     --slideshow-nav-height: 8rem;

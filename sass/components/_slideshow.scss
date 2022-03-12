@@ -72,8 +72,16 @@
     margin: var(--slideshow-nav-btn-margin);
     transition: all 0.2s;
 
-    &:hover, &:focus {
-      background-color: var(--color-bg-slideshow-btn);
+    
+    &--prev:hover, 
+    &--prev:focus {
+      //background-color: var(--color-bg-slideshow-btn);
+      transform: scale(1.1) translateX(-5px);
+    }
+    &--next:hover, 
+    &--next:focus {
+      //background-color: var(--color-bg-slideshow-btn);
+      transform: scale(1.1) translateX(5px);
     }
   }
 }

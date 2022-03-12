@@ -34,7 +34,7 @@
   --slideshow-nav-btn-padding: 0.3rem 0.3rem;
   --color-bg-slideshow-btn: rgba(0,0,0,0.5);
   --slideshow-nav-height: 10rem;
-  --slideshow-nav-border: 2px solid var(--color-main-text-light);
+  --slideshow-nav-border: var(--border-nav);
   --color-bg-contact-box: var(--color-main-background-light);
   --color-text-contact-box: var(--color-main-text-dark);
   --box-shadow-contact-box: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -583,8 +583,10 @@ p {
     border-radius: 3px;
     margin: var(--slideshow-nav-btn-margin);
     transition: all 0.2s; }
-    .slideshow__nav-btn:hover, .slideshow__nav-btn:focus {
-      background-color: var(--color-bg-slideshow-btn); }
+    .slideshow__nav-btn--prev:hover, .slideshow__nav-btn--prev:focus {
+      transform: scale(1.1) translateX(-5px); }
+    .slideshow__nav-btn--next:hover, .slideshow__nav-btn--next:focus {
+      transform: scale(1.1) translateX(5px); }
 
 /* The Modal (background) */
 .lightbox {
