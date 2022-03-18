@@ -23,22 +23,24 @@
   
   &__item {
     position: relative;
-
+    overflow: hidden;
     transition: 0.2s;
-    
     
     &:hover,
     &:focus {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: var(--box-shadow-on-hover);
       transform: scale(1.01);
     }
     
   }
-
   
   &__img {
     max-width: 100%;
     display: block;
+
+    transform: scale(1.1);
+    transition: 3s 0.2s;
+    
   }
 
   &__text-box {
@@ -61,13 +63,25 @@
   }
 }
 
+// Animations on link hover/focus
+.gallery__link:hover .gallery__img,
+.gallery__link:focus .gallery__img {
+  transform: scale(1);
+}
+.gallery__link:hover .gallery__item,
+.gallery__link:focus .gallery__item {
+  box-shadow: var(--box-shadow-on-hover);
+  transform: scale(1.01);
+}
+
+
+// Media queries
 @media screen and (min-width: 600px) {
   .gallery__item-wrapper { 
     flex-basis: 50%;
     //max-width: 50%; 
   }
 }
-
 @media screen and (min-width: 900px) {
   .gallery__item-wrapper { 
     flex-basis: 33.33%;

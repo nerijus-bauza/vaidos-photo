@@ -1,7 +1,7 @@
 
 .nav-wrapper {
   background-color: var(--color-main-background);
-  backdrop-filter: var(--backdrop-filter);
+  //backdrop-filter: var(--backdrop-filter);
 
   width: 100%;
   position: fixed;
@@ -14,7 +14,7 @@
 
 .nav-wrapper--scrolled-bottom {
   background-color: var(--color-main-background-light);
-  backdrop-filter: var(--backdrop-filter-nav);
+  backdrop-filter: var(--backdrop-filter);
   color: var(--color-main-text-dark);
   --color-nav: var(--color-main-text-dark);
   --color-nav-link-underline: var(--color-main-text-dark);
@@ -133,7 +133,7 @@
   height: 100vh;
   
   background-color: var(--color-nav-resp-bg);
-  backdrop-filter: var(--backdrop-filter-nav);  
+  backdrop-filter: var(--backdrop-filter);  
 
   display: none;
 }

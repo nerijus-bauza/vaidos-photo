@@ -1,0 +1,131 @@
+.offers-section {
+  width: 100%;
+  min-height: 100vh;
+  
+  background-image: url("../img/offers/offers-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  padding: 5vh 2vw;
+  
+}  
+
+.offers {
+  width: 100%;
+  max-width: 1220px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+
+  font-size: 1.6rem;
+  color: var(--color-main-text-dark);
+  
+  //border: 1px solid red;
+
+  &__title,
+  &__text {
+    padding: 2rem;
+    margin: 0;
+  }
+
+  &__title,
+  &__card,
+  &__text {
+    background-color: var(--color-main-background-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: var(--backdrop-filter);
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card-wrapper {    
+    padding: 1rem;    
+    flex-basis: 100%;
+
+    //border: 1px solid green;
+  }
+
+  &__card {
+    padding: 3rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: var(--box-shadow-on-hover);
+      transform: scale(1.01);
+    }
+
+    //border: 1px solid blue;
+  }
+
+  &__card-text {
+    margin-bottom: 4rem;
+  }
+
+  &__card-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-main-background-dark);
+  }
+
+  &__card-ul {
+    margin: 2rem 0;
+  }
+
+  &__card-li {
+    list-style-position: inside;
+    margin-bottom: 2rem;
+  }
+
+  
+
+  &__card-btn {
+    //width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+    color: var(--color-main-text-light);
+    background-color: var(--color-main-background-dark);
+    
+    padding: 1rem 2rem;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-2px);
+      box-shadow: var(--box-shadow);
+    }
+    
+  }
+}
+
+// Media queries
+@media screen and (min-width: 600px) {
+  .offers { padding: 0 1rem; }
+  .offers__card-wrapper { flex-basis: 50%; }
+  .offers__title,
+  .offers__text { margin: 1rem; }
+}
+@media screen and (min-width: 900px) {
+  .offers__card-wrapper { flex-basis: 33.33%; }
+}

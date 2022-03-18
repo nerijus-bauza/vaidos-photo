@@ -54,7 +54,7 @@
   right: 0;
   font-size: 3.5rem;
   font-weight: bold;
-  border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 var(--border-radius);
   
   width: 4.5rem;
   height: 4.5rem;
@@ -83,7 +83,7 @@
   font-weight: bold;
   font-size: 2rem;
   transition: 0.3s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
   user-select: none;
   -webkit-user-select: none;
 
@@ -93,7 +93,7 @@
 /* Position the "next button" to the right */
 .lightbox__btn-next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -140,5 +140,5 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: var(--box-shadow-on-hover);
 }
