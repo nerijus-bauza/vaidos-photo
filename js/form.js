@@ -16,7 +16,6 @@ $(document).ready(function () {
     console.log(formData);
 
     subBtn.css("display", "none");
-    subMsg.css("display", "block");
         
     $.ajax({
       type: "POST",
@@ -27,6 +26,7 @@ $(document).ready(function () {
     })
       .done(function (data) {
         //console.log(data);
+        subMsg.css("display", "block");
         subMsg.text("Jūsų žinutė sėkmingai išsiųsta");
     })
       .fail(function (data) {
