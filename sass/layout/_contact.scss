@@ -114,7 +114,11 @@
   &__spacer { height: 2rem; }
 }
 
-
+#submitMsg {
+  display: none;
+  border: 1px solid green;
+  padding: 0.5rem 1rem;
+}
 
 
 @media screen and (min-width: 600px) {

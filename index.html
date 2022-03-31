@@ -4,13 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+    
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/5a6a3a930e.js" crossorigin="anonymous"></script>
   <title>Vaidos Photography</title>
@@ -416,7 +410,8 @@
           <div class="contact__part">
             <h2 class="contact__header">Parašykite man</h2>
 
-            <form action="" class="contact__form">
+            <form action="" method="POST" class="contact__form" id="contactForm">
+            
               
               <div class="contact__form-field">
                 <label class="contact__form-label" for="name">Jūsų vardas:</label>
@@ -437,12 +432,13 @@
 
               <div class="contact__form-field">
                 <label class="contact__form-label" for="message">Jūsų žinutė:</label>
-                <textarea class="contact__form-input contact__form-input--text" id="message" name="message" rows="5" cols="50"></textarea>
+                <textarea class="contact__form-input contact__form-input--text" id="message" name="message" rows="5" cols="50" required></textarea>
               </div>
 
               <div class="contact__form-field">
-                <input class="contact__form-input contact__form-input--btn" type="submit" value="Siųsti">
+                <input class="contact__form-input contact__form-input--btn" type="submit" value="Siųsti" id="submitBtn">
               </div>
+              <span id="submitMsg">Jūsų žinutė sėkmingai išsiųsta</span>
               
             </form>
 
@@ -467,5 +463,9 @@
 
 
   <script src="./js/script.js"></script>
+
+  <!-- Form submition formsubmit.co + jQuery AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

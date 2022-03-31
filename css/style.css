@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap");
 :root {
   --color-main-text: #222e;
   --color-main-text-light: #eeee;
@@ -51,16 +55,6 @@
       --slideshow-nav-btn-width: 4rem;
       --slideshow-nav-btn-height: 4rem;
       --slideshow-nav-btn-margin: 1rem; } }
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-body {
-  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -142,6 +136,16 @@ p {
   font-weight: var(--font-weigth-slide-link);
   text-decoration: underline;
   white-space: nowrap; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
 
 .fade {
   -webkit-animation-name: fade;
@@ -600,6 +604,11 @@ p {
         box-shadow: var(--box-shadow); }
   .contact__spacer {
     height: 2rem; }
+
+#submitMsg {
+  display: none;
+  border: 1px solid green;
+  padding: 0.5rem 1rem; }
 
 @media screen and (min-width: 600px) {
   .contact {
