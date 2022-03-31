@@ -19,7 +19,7 @@ $(document).ready(function () {
         
     $.ajax({
       type: "POST",
-      url: "https://formsubmit.co/ajax/nerijus.bauza@gmail.com",
+      url: "https://formsubmit.co/ajax/vaida.cek@gmail.com",
       dataType: "json",
       accepts: 'application/json',
       data: formData,
