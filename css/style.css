@@ -373,7 +373,7 @@ body {
 .galleries-section {
   width: 100%;
   max-width: 1220px;
-  margin: 7rem auto 7rem;
+  margin: 7rem auto 10rem;
   padding: 0 1rem; }
   .galleries-section__header {
     margin-left: 1rem; }
@@ -467,7 +467,8 @@ body {
     backdrop-filter: var(--backdrop-filter); }
   .offers__cards {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
   .offers__card-wrapper {
     padding: 1rem;
     flex-basis: 100%; }
@@ -644,7 +645,7 @@ body {
   border: 1px solid green;
   padding: 0.5rem 1rem; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .contact {
     flex-direction: row; }
     .contact__spacer {
