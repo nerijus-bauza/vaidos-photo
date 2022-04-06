@@ -23,12 +23,16 @@ a {
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
   transition: all 0.2s;
 
   display: block;
   width: fit-content;
   margin-left: auto;
-  margin-top: 5rem;  
+  margin-top: 3rem;  
 
   &:hover {
     transform: translateX(3px);

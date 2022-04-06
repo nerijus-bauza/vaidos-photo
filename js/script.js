@@ -119,3 +119,15 @@ function showLBSlides(n) {
   //dots[slideLBIndex-1].className += " active";
   //captionText.innerHTML = dots[slideLBIndex-1].alt;
 }
+
+// PORTFOLIO
+
+const portfolioPartTwo = document.getElementById('portfolio-part-two');
+const portfolioPartThree = document.getElementById('portfolio-part-three');
+const portfolioLink = document.getElementById('portfolio-link');
+
+portfolioLink.addEventListener('click', function(){
+  portfolioPartTwo.classList.remove('portfolio--hidden');
+  portfolioPartThree.classList.remove('portfolio--hidden');
+  portfolioLink.style.display = "none";
+});

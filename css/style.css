@@ -72,11 +72,15 @@ a {
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
   transition: all 0.2s;
   display: block;
   width: fit-content;
   margin-left: auto;
-  margin-top: 5rem; }
+  margin-top: 3rem; }
   .section-link:hover,
   .section-link:link:hover,
   .section-link:visited:hover {
@@ -329,7 +333,7 @@ body {
     display: inline-block; } }
 
 .portfolio-section {
-  margin: 5rem auto;
+  margin: 7rem auto 5rem;
   max-width: 100%;
   padding: 0 1rem; }
 
@@ -339,6 +343,8 @@ body {
 .portfolio {
   display: flex;
   flex-wrap: wrap; }
+  .portfolio--hidden {
+    display: none; }
   .portfolio__column {
     flex: 100%;
     max-width: 100%;
@@ -351,6 +357,8 @@ body {
     .portfolio__img:hover, .portfolio__img:focus {
       box-shadow: var(--box-shadow-on-hover);
       transform: scale(1.01); }
+  .portfolio__link {
+    margin-right: 2rem; }
 
 @media screen and (min-width: 800px) {
   .portfolio__column {
@@ -365,7 +373,7 @@ body {
 .galleries-section {
   width: 100%;
   max-width: 1220px;
-  margin: 5rem auto;
+  margin: 7rem auto 5rem;
   padding: 0 1rem; }
 
 .gallery {
@@ -431,7 +439,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 2vw; }
+  padding: 5vh 2vw;
+  margin: 7rem auto 5rem; }
 
 .offers {
   width: 100%;
@@ -564,7 +573,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 2vw; }
+  padding: 5vh 2vw;
+  margin: 7rem auto 0; }
 
 .contact {
   max-width: 120rem;

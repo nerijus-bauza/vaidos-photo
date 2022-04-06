@@ -1,5 +1,5 @@
 .portfolio-section {
-  margin: 5rem auto;
+  margin: 7rem auto 5rem;
   max-width: 100%;
   padding: 0 1rem;
   //text-align: justify;
@@ -12,7 +12,10 @@
   display: flex;
   flex-wrap: wrap;
   
-  
+  &--hidden {
+    display: none;
+  }
+
   //padding: 0 5px;
 
   &__column {
@@ -37,6 +40,10 @@
       transform: scale(1.01);
     }
     
+  }
+
+  &__link {
+    margin-right: 2rem;
   }
 }
 
