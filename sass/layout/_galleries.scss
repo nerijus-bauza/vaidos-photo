@@ -1,15 +1,19 @@
 .galleries-section {  
   width: 100%;
   max-width: 1220px;
-  margin: 7rem auto 5rem;
+  margin: 7rem auto 7rem;
   padding: 0 1rem;
+
+  &__header {
+    margin-left: 1rem;
+  }
 }
 
 .gallery {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   
   //border: 1px solid red;
 

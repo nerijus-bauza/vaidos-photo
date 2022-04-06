@@ -373,14 +373,16 @@ body {
 .galleries-section {
   width: 100%;
   max-width: 1220px;
-  margin: 7rem auto 5rem;
+  margin: 7rem auto 7rem;
   padding: 0 1rem; }
+  .galleries-section__header {
+    margin-left: 1rem; }
 
 .gallery {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .gallery__item-wrapper {
     padding: 1rem;
     flex-basis: 100%;
@@ -452,9 +454,12 @@ body {
   justify-content: center;
   font-size: 1.6rem;
   color: var(--color-main-text-dark); }
-  .offers__title, .offers__text {
+  .offers__title {
     padding: 2rem;
-    margin: 0; }
+    margin: 0 0 2rem 0; }
+  .offers__text {
+    padding: 2rem;
+    margin: 2rem 0 0 0; }
   .offers__title, .offers__card, .offers__text {
     background-color: var(--color-main-background-light);
     border-radius: var(--border-radius);
@@ -506,9 +511,10 @@ body {
     padding: 0 1rem; }
   .offers__card-wrapper {
     flex-basis: 50%; }
-  .offers__title,
+  .offers__title {
+    margin: 1rem 1rem 3rem 1rem; }
   .offers__text {
-    margin: 1rem; } }
+    margin: 3rem 1rem 1rem 1rem; } }
 
 @media screen and (min-width: 900px) {
   .offers__card-wrapper {
