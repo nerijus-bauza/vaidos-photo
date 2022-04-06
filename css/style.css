@@ -572,7 +572,7 @@ body {
 .contact-section {
   width: 100%;
   min-height: 100vh;
-  background-image: url("../img/contact-bg-big-1-opt.jpg");
+  background-image: url("../img/contact/contact-bg-big-1-opt.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -674,11 +674,15 @@ body {
     background-position: center;
     display: none; }
     .slideshow__slide--1 {
-      background-image: url("../img/hero-bg-big-2-opt.jpg"); }
+      background-image: url("../img/slideshow/slideshow-001.jpg"); }
     .slideshow__slide--2 {
-      background-image: url("../img/hero-bg-big-1-opt.jpg"); }
+      background-image: url("../img/slideshow/slideshow-002.jpg"); }
     .slideshow__slide--3 {
-      background-image: url("../img/hero-bg-big-3-opt.jpg"); }
+      background-image: url("../img/slideshow/slideshow-003.jpg"); }
+    .slideshow__slide--4 {
+      background-image: url("../img/slideshow/slideshow-004.jpg"); }
+    .slideshow__slide--5 {
+      background-image: url("../img/slideshow/slideshow-005.jpg"); }
   .slideshow__slide-overlay {
     position: absolute;
     left: 0;
