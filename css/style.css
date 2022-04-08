@@ -334,7 +334,7 @@ body {
 
 .portfolio-section {
   margin: 7rem auto 5rem;
-  max-width: 100%;
+  max-width: 1920px;
   padding: 0 1rem; }
 
 .portfolio-header {
@@ -360,12 +360,12 @@ body {
   .portfolio__link {
     margin-right: 2rem; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .portfolio__column {
     flex: 50%;
     max-width: 50%; } }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1200px) {
   .portfolio__column {
     flex: 25%;
     max-width: 25%; } }
