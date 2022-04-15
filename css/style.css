@@ -17,11 +17,13 @@
   --box-shadow-on-hover: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Cinzel', serif;
+  --nav-logo-url: url("../img/logo/logo-light.png");
+  --nav-logo-width: 25rem;
+  --nav-logo-height: 12.5rem;
   --font-logo: 'Birthstone Bounce', cursive;
   --font-size-logo: 4rem;
-  --font-size-nav: 2.5rem;
+  --font-size-nav: 2.25rem;
   --font-weigth-nav: 500;
-  --border-nav: 2px solid var(--color-main-text-light);
   --border-nav: none;
   --color-nav: var(--color-main-text-light);
   --color-nav-link-underline: var(--color-main-text-light);
@@ -206,7 +208,11 @@ body {
   --color-nav-link-underline: var(--color-main-text-dark);
   --border-nav: none;
   border-bottom: 1px solid var(--color-main-text-dark);
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  --font-size-nav: 2rem;
+  --nav-logo-url: url("../img/logo/logo-dark.png");
+  --nav-logo-width: 25rem;
+  --nav-logo-height: 5rem; }
 
 .nav {
   min-height: 5rem;
@@ -215,10 +221,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .nav__logo {
-    margin-left: 2rem; }
   .nav__items {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
@@ -226,15 +230,24 @@ body {
     border-top: var(--border-nav);
     border-bottom: var(--border-nav); }
   .nav__item {
+    display: none;
     list-style: none;
     margin: 0.5rem; }
+    .nav__item--logo-cont {
+      display: block;
+      margin: 0 1.5rem; }
   .nav__link {
     position: relative;
     transition: all 0.2s;
     display: inline-block; }
     .nav__link--logo {
-      margin: 0 1.5rem;
-      display: none; }
+      display: inline-block;
+      width: var(--nav-logo-width);
+      height: var(--nav-logo-height);
+      background-image: var(--nav-logo-url);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
     .nav__link::after {
       content: "";
       display: block;
@@ -323,14 +336,10 @@ body {
 @media screen and (min-width: 1100px) {
   .nav-wrapper {
     top: 6rem; }
-  .nav__logo {
-    display: none; }
   .nav__togle-button {
     display: none; }
-  .nav__items {
-    display: flex; }
-  .nav__link--logo {
-    display: inline-block; } }
+  .nav__item {
+    display: block; } }
 
 .portfolio-section {
   margin: 7rem auto 5rem;
@@ -706,7 +715,7 @@ body {
     width: 100%;
     height: var(--slideshow-nav-height);
     position: absolute;
-    bottom: 0;
+    bottom: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
     border-top: var(--slideshow-nav-border);

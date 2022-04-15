@@ -1,7 +1,7 @@
 :root {
   --color-main-text: #222e;
-  --color-main-text-light: #eeee;
-  --color-main-text-dark: #222e;
+  --color-main-text-light: #eeee; //rgba(238, 238, 238, 0.93)
+  --color-main-text-dark: #222e; //rgba(34, 34, 34, 0.93)
 
   //--color-main-background: rgba(255,255,255,1);
   //--color-main-background: rgba(0,0,0,0.5);
@@ -36,13 +36,19 @@
   //--font-secondary: 'Montserrat', sans-serif;
   //--font-secondary: 'Quicksand', sans-serif;
   
-  // NAVIGATION
+  // LOGO
+  --nav-logo-url: url("../img/logo/logo-light.png");
+  --nav-logo-width: 25rem;
+  --nav-logo-height: 12.5rem;  
+
   --font-logo: 'Birthstone Bounce', cursive;
   --font-size-logo: 4rem;
 
-  --font-size-nav: 2.5rem;
+  // NAVIGATION    
+
+  --font-size-nav: 2.25rem;
   --font-weigth-nav: 500;
-  --border-nav: 2px solid var(--color-main-text-light);
+  //--border-nav: 2px solid var(--color-main-text-light);
   --border-nav: none;
   
   --color-nav: var(--color-main-text-light);
