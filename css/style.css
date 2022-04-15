@@ -17,9 +17,8 @@
   --box-shadow-on-hover: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Cinzel', serif;
-  --nav-logo-url: url("../img/logo/logo-light.png");
-  --nav-logo-width: 25rem;
-  --nav-logo-height: 12.5rem;
+  --nav-logo-width: 20rem;
+  --nav-logo-height: 10rem;
   --font-logo: 'Birthstone Bounce', cursive;
   --font-size-logo: 4rem;
   --font-size-nav: 2.25rem;
@@ -209,10 +208,11 @@ body {
   --border-nav: none;
   border-bottom: 1px solid var(--color-main-text-dark);
   padding: 0 1rem;
-  --font-size-nav: 2rem;
-  --nav-logo-url: url("../img/logo/logo-dark.png");
-  --nav-logo-width: 25rem;
-  --nav-logo-height: 5rem; }
+  --font-size-nav: 2rem; }
+  .nav-wrapper--scrolled-bottom .nav__link--logo {
+    background-image: url("../img/logo/logo-dark.svg");
+    --nav-logo-width: 20rem;
+    --nav-logo-height: 4rem; }
 
 .nav {
   min-height: 5rem;
@@ -244,7 +244,7 @@ body {
       display: inline-block;
       width: var(--nav-logo-width);
       height: var(--nav-logo-height);
-      background-image: var(--nav-logo-url);
+      background-image: url("../img/logo/logo-light.svg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
@@ -339,7 +339,13 @@ body {
   .nav__togle-button {
     display: none; }
   .nav__item {
-    display: block; } }
+    display: block; }
+  .nav__link--logo {
+    --nav-logo-width: 25rem;
+    --nav-logo-height: 12.5rem; }
+  .nav-wrapper--scrolled-bottom .nav__link--logo {
+    --nav-logo-width: 25rem;
+    --nav-logo-height: 5rem; } }
 
 .portfolio-section {
   margin: 7rem auto 5rem;
