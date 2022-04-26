@@ -27,7 +27,7 @@
           <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
           <li class="nav__item"><a href="#galleries" class="nav__link">Galerijos</a></li>
           
-          <li class="nav__item--logo-cont"><a href="#" class="nav__link--logo"></a></li>
+          <li class="nav__item--logo-cont"><a href="#" class="nav__link--logo" aria-label="page logo"></a></li>
           
           <li class="nav__item"><a href="#offers" class="nav__link">Pasiūlymai</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">Apie</a></li>
@@ -253,9 +253,13 @@
 
             <!-- Next/previous controls -->
             <span class="lightbox__btn-close" onclick="closeModal()">&times;</span>
+            <!--
             <a class="lightbox__btn-prev" onclick="plusLBSlides(-1)">&#10094;</a>
             <a class="lightbox__btn-next" onclick="plusLBSlides(1)">&#10095;</a>
-
+            -->
+            <button class="lightbox__btn-prev" onclick="plusLBSlides(-1)">&#10094;</button>
+            <button class="lightbox__btn-next" onclick="plusLBSlides(1)">&#10095;</button>
+            
             
             <!-- Caption text -->
             <!--
@@ -669,7 +673,16 @@
   <script src="./js/script.js"></script>
 
   <!-- Form submition formsubmit.co + jQuery AJAX -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+  <!-- <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script> -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
   <script src="./js/form.js"></script>
 </body>
 </html>

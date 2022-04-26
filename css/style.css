@@ -805,6 +805,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
   transition: 0.3s ease;
+  border: none;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   user-select: none;
   -webkit-user-select: none;
