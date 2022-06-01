@@ -50,6 +50,11 @@
   --font-weigth-nav: 500;
   //--border-nav: 2px solid var(--color-main-text-light);
   --border-nav: none;
+
+  // nav scrolled bottom
+  --box-shadow-scrolled-bottom: 0 2px 3px rgba(0, 0, 0, 0.15);
+  //--border-bottom-nav-scrolled-bottom: 1px solid var(--color-main-text-dark);
+  --border-bottom-nav-scrolled-bottom: 1px solid rgba(0, 0, 0, 0.3);
   
   --color-nav: var(--color-main-text-light);
   --color-nav-link-underline: var(--color-main-text-light);

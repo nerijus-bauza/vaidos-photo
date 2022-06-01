@@ -19,7 +19,8 @@
   --color-nav: var(--color-main-text-dark);
   --color-nav-link-underline: var(--color-main-text-dark);
   --border-nav: none;
-  border-bottom: 1px solid var(--color-main-text-dark);
+  border-bottom: var(--border-bottom-nav-scrolled-bottom);
+  box-shadow: var(--box-shadow-scrolled-bottom);
   padding: 0 1rem;
   
   --font-size-nav: 2rem;  
