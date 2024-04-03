@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/5a6a3a930e.js" crossorigin="anonymous"></script>
-  
+
   <title>Vaida Čekavičiūtė Photography - Vestuvių fotografija</title>
   <meta name="description" content="Vaida Čekavičiūtė Photography website - Vestuvių fotografija">
   <link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
@@ -15,13 +15,10 @@
 </head>
 <body>
   <div class="container">
-    
+
     <!-- navigation -->
     <div class="nav-wrapper" id="nav-wrapper">
       <nav class="nav">
-        <!--
-        <div class="nav__logo"><a href="#">Vaida Čekavičiūtė</a></div>
-        -->
         <ul class="nav__items">
           <li class="nav__item"><a href="#" class="nav__link">Pradžia</a></li>
           <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
@@ -43,7 +40,6 @@
     <!-- responsive navigation -->
     <div class="nav-resp-wrapper" id="nav-resp-wrapper">
       <ul class="nav-resp">
-        
         <li class="nav-resp__item"><a href="#" class="nav__link nav-resp__link">Pradžia</a></li>
         <li class="nav-resp__item"><a href="#portfolio" class="nav__link nav-resp__link">Portfolio</a></li>
         <li class="nav-resp__item"><a href="#galleries" class="nav__link nav-resp__link">Galerijos</a></li>
@@ -57,17 +53,9 @@
       </div>
     </div>
 
-    
     <header class="slideshow" id="slideshow">    
-
       <div class="slideshow__slide slideshow__slide--1 fade">
         <div class="slideshow__slide-overlay"></div>
-        <!-- 
-        <div class="slideshow__slide-text-box">
-          <a href="#" class="slideshow__slide-text-caption">Vestuvių fotosesija v3</a>
-          <a href="#" class="slideshow__slide-text-link">Jaunoji + Jaunikis</a>
-        </div>
-        -->
       </div>
       <div class="slideshow__slide slideshow__slide--2 fade">
         <div class="slideshow__slide-overlay"></div>        
@@ -81,29 +69,16 @@
       <div class="slideshow__slide slideshow__slide--5 fade">
         <div class="slideshow__slide-overlay"></div>        
       </div>
-      <!-- <div class="slideshow__slide slideshow__slide--6 fade">
-        <div class="slideshow__slide-overlay"></div>        
-      </div> -->
-      
-      
-
       <div class="slideshow__nav">        
         <svg class="slideshow__nav-btn slideshow__nav-btn--prev" id="slideshow-nav-btn-prev" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 100 100"><path d="M13.2 38.3C7.6 43.9 3 49.2 3 50c0 .9 4.7 6.2 10.5 12 7.9 7.9 10.7 10.2 11.6 9.3s0-2.6-3.9-7c-2.7-3.2-6.4-7.2-8.2-8.8l-3.1-3 43.8-.5c38-.4 43.8-.7 43.8-2s-5.7-1.5-43.8-1.8L9.9 48l8-8.7c7.6-8.2 8.8-10.2 6.5-11-.5-.2-5.5 4.3-11.2 10z"/></svg>
-        
         <!-- <div class="slideshow__nav-text"></div> -->
-        
         <svg class="slideshow__nav-btn  slideshow__nav-btn--next" id="slideshow-nav-btn-next" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 100 100"><path d="M74.5 29c-.6 1 8.3 11.8 13.5 16.5l2.2 2-43.8.5c-38.1.4-43.9.7-43.9 2s5.6 1.5 43.8 1.8l43.8.2-7.8 8.6c-4.3 4.6-7.8 9-7.8 9.6 0 3 2.9.9 13-9.2l11-11-11-11c-6-6.1-11.3-11-11.7-11s-1 .5-1.3 1z"/></svg>
-        
       </div>
-
     </header>
-    
     <main class="main">
-
       <!-- PORTFOLIO SECTION -->
       <section class="portfolio-section" id="portfolio">
         <h2 class="portfolio-header">Portfolio</h2>
-        
         <div class="portfolio">
           <div class="portfolio__column">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-012.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(1)">
@@ -118,7 +93,6 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-l-013.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(8)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-026.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(9)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-022.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(10)">
-            
           </div>
           <div class="portfolio__column">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-011.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(11)">
@@ -135,7 +109,6 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-025.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(20)">
           </div>
         </div>
-
         <!-- Initially hidden portfolio part -->
         <div class="portfolio portfolio--hidden" id="portfolio-part-two">
           <div class="portfolio__column">
@@ -148,7 +121,6 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-l-005.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(27)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-013.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(28)">            
           </div>
-
           <div class="portfolio__column">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-016.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(29)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-015.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(30)">
@@ -159,7 +131,6 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-031.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(35)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-l-015.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(36)">            
           </div>
-
           <div class="portfolio__column">
             <img class="portfolio__img" src="./img/portfolio/portfolio-l-009.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(37)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-001.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(38)">
@@ -170,7 +141,6 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-029.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(43)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-028.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(44)">
           </div>
-
           <div class="portfolio__column">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-023.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(45)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-008.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(46)">
@@ -181,12 +151,9 @@
             <img class="portfolio__img" src="./img/portfolio/portfolio-p-036.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(51)">
             <img class="portfolio__img" src="./img/portfolio/portfolio-l-002.jpg" alt="portfolio photo" onclick="openModal();currentLBSlide(52)">            
           </div>
-          
         </div>
-
         <!-- The Modal/Lightbox -->
         <div id="myModal" class="lightbox">
-          
           <div class="lightbox__content">
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-012.jpg" alt="portfolio photo"></div>
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-017.jpg" alt="portfolio photo"></div>
@@ -213,7 +180,6 @@
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-025.jpg" alt="portfolio photo"></div>
 
             <!-- portfolio part two -->
-            
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-006.jpg" alt="portfolio photo"></div>
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-l-020.jpg" alt="portfolio photo"></div>
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-024.jpg" alt="portfolio photo"></div>
@@ -250,43 +216,29 @@
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-p-036.jpg" alt="portfolio photo"></div>
             <div class="lightbox__slide"><img class="lightbox__img" src="./img/portfolio/portfolio-l-002.jpg" alt="portfolio photo"></div>
 
-
             <!-- Next/previous controls -->
             <span class="lightbox__btn-close" onclick="closeModal()">&times;</span>
-            <!--
-            <a class="lightbox__btn-prev" onclick="plusLBSlides(-1)">&#10094;</a>
-            <a class="lightbox__btn-next" onclick="plusLBSlides(1)">&#10095;</a>
-            -->
             <button class="lightbox__btn-prev" onclick="plusLBSlides(-1)">&#10094;</button>
             <button class="lightbox__btn-next" onclick="plusLBSlides(1)">&#10095;</button>
-            
-            
             <!-- Caption text -->
             <!--
             <div class="caption-container">
               <p id="caption"></p>
             </div>
             -->
-
           </div>
         </div>
-
         <button class="section-link portfolio__link" id="portfolio-link">Daugiau portfolio ></button>
       </section>
-
-
-      
-
-
       <!-- GALERIJOS SECTION-->
       <section class="galleries-section" id="galleries">
         <h2 class="galleries-section__header">Galerijos</h2>
         <div class="gallery">
           
           <div class="gallery__item-wrapper">
-            <a href="https://cekaviciute.passgallery.com/-eglegediminas/gallery" target="_blank" class="gallery__link">
+            <a href="https://vaidacekaviciutephotography.pixieset.com/viktorijairgytis-2/" target="_blank" class="gallery__link">
               <div class="gallery__item">
-                <img src="./img/galleries/galleries-001-480.jpg" 
+                <img src="./img/galleries/galleries-001-480.jpg"
                      srcset="./img/galleries/galleries-001-360.jpg 360w,
                              ./img/galleries/galleries-001-480.jpg 480w,
                              ./img/galleries/galleries-001-600.jpg 600w,
@@ -298,14 +250,14 @@
                      alt="galerija 1" 
                      class="gallery__img">
                 <div class="gallery__text-box">
-                  <h3 class="gallery__caption">Eglė ir Gediminas</h3>
+                  <h3 class="gallery__caption">Viktorija ir Gytis</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
           <div class="gallery__item-wrapper">
-            <a href="https://cekaviciute.passgallery.com/-livetairmantas/gallery" target="_blank" class="gallery__link">
+            <a href="https://vaidacekaviciutephotography.pixieset.com/skaistirvilius-1/" target="_blank" class="gallery__link">
               <div class="gallery__item">
                 <img src="./img/galleries/galleries-002-480.jpg" 
                      srcset="./img/galleries/galleries-002-360.jpg 360w,
@@ -319,14 +271,14 @@
                      alt="galerija 2" 
                      class="gallery__img">
                 <div class="gallery__text-box">
-                  <h3 class="gallery__caption">Liveta ir Mantas</h3>
+                  <h3 class="gallery__caption">Skaistė ir Vilius</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
           <div class="gallery__item-wrapper">
-            <a href="https://cekaviciute.passgallery.com/-julijairvitalikas/gallery" target="_blank" class="gallery__link">
+            <a href="https://vaidacekaviciutephotography.pixieset.com/samantairmartynas-1/" target="_blank" class="gallery__link">
               <div class="gallery__item">
                 <img src="./img/galleries/galleries-003-480.jpg" 
                      srcset="./img/galleries/galleries-003-360.jpg 360w,
@@ -340,14 +292,14 @@
                      alt="galerija 3" 
                      class="gallery__img">
                 <div class="gallery__text-box">
-                  <h3 class="gallery__caption">Julija ir Vitalikas</h3>
+                  <h3 class="gallery__caption">Samanta ir Martynas</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
           <div class="gallery__item-wrapper">
-            <a href="https://cekaviciute.passgallery.com/-be/gallery" target="_blank" class="gallery__link">
+            <a href="https://vaidacekaviciutephotography.pixieset.com/julijairvitalikas/" target="_blank" class="gallery__link">
               <div class="gallery__item">
                 <img src="./img/galleries/galleries-004-480.jpg" 
                      srcset="./img/galleries/galleries-004-360.jpg 360w,
@@ -361,14 +313,14 @@
                      alt="galerija 4" 
                      class="gallery__img">
                 <div class="gallery__text-box">
-                  <h3 class="gallery__caption">Bernadeta ir Ernestas</h3>
+                  <h3 class="gallery__caption">Julija ir Vitalikas</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
           <div class="gallery__item-wrapper">
-            <a href="https://cekaviciute.passgallery.com/-eimantirjonas/gallery" target="_blank" class="gallery__link">
+            <a href="https://vaidacekaviciutephotography.pixieset.com/dominykairaleksas/" target="_blank" class="gallery__link">
               <div class="gallery__item">
                 <img src="./img/galleries/galleries-005-480.jpg" 
                      srcset="./img/galleries/galleries-005-360.jpg 360w,
@@ -382,9 +334,9 @@
                      alt="galerija 5" 
                      class="gallery__img">
                 <div class="gallery__text-box">
-                  <h3 class="gallery__caption">Eimantė ir Jonas</h3>
+                  <h3 class="gallery__caption">Dominyka ir Aleksas</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
@@ -405,7 +357,7 @@
                 <div class="gallery__text-box">
                   <h3 class="gallery__caption">Rugilė ir Justas</h3>
                   <p class="gallery__text">Vestuvių fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
@@ -426,7 +378,7 @@
                 <div class="gallery__text-box">
                   <h3 class="gallery__caption">Ieva ir Dovydas</h3>
                   <p class="gallery__text">Poros fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
@@ -447,7 +399,7 @@
                 <div class="gallery__text-box">
                   <h3 class="gallery__caption">Mažoji Sofija</h3>
                   <p class="gallery__text">Šeimos fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
@@ -468,27 +420,20 @@
                 <div class="gallery__text-box">
                   <h3 class="gallery__caption">Labai Tavęs laukiam</h3>
                   <p class="gallery__text">Šeimos fotosesija</p>
-                </div>              
+                </div>
               </div>
             </a>
           </div>
-
         </div>
-
         <!--
         <a href="#galleries" class="section-link">Daugiau Galerijų ></a>
         -->
-
       </section>
-
-      
       <!-- PASIŪLYMAI SECTION-->
       <section class="offers-section" id="offers">
         <div class="offers">
           <h2 class="offers__title">Vestuvių Fotografavimo Pasiūlymai</h2>
-          
           <div class="offers__cards">
-            
             <div class="offers__card-wrapper">
               <div class="offers__card">
                 <div class="offers__card-text">
@@ -502,7 +447,6 @@
                 <a href="#contact" class="offers__card-btn">Pasidomėti</a>
               </div>
             </div>
-
             <div class="offers__card-wrapper">
               <div class="offers__card">
                 <div class="offers__card-text">
@@ -516,7 +460,6 @@
                 <a href="#contact" class="offers__card-btn">Pasidomėti</a>
               </div>
             </div>
-
             <div class="offers__card-wrapper">
               <div class="offers__card">
                 <div class="offers__card-text">
@@ -531,27 +474,15 @@
                 <a href="#contact" class="offers__card-btn">Pasidomėti</a>
               </div>
             </div>
-
           </div>
-
           <div class="offers__text">
             <p>- Jei reikalingas kitas valandų skaičius, kaina derinama.</p>
             <p>- Per 14 d. nuo šventės fotografavimo dienos gaunate šventės anonsą.</p>
             <p>- Dirbu visoje Lietuvoje ir už jos ribų. Jei vestuvės vyks ne Kauno mieste, prašysiu kompensuoti kelionės išlaidas 25Eur/100km.</p>
             <p>- Data rezervuojama, kai pasirašoma sutartis ir sumokamas 20% avansas.</p>
           </div>
-
-          
-
-
-
         </div>
-        
-        
-        
-
       </section>
-
       <!-- APIE SECTION-->
       <section class="about-section" id="about">
         <div class="about">
@@ -562,113 +493,78 @@
             <p>mėgstu paprastumą, natūralumą ir minimalizmą fotografijoje. Nemėgstu nepatogaus pozavimo, bet padedu nepasimesti. Stengiuosi įamžinti akimirkas, kurios yra nesurežisuotos, tikros, o žmonės jose atviri.</p>
             <p>Fotosesijos metu būna daug ramaus buvimo kartu. Mano tikslas, jog gautumėte ne tik gražias nuotraukas, bet atsimintumėte malonią fotosesijos patirtį. Noriu, kad dovanodama Jums atsiminimus, priminčiau tądien išgyventas emocijas, nepastebėtas šypsenas, reikšmingas šventės detales.</p>
             <p>Nekantrauju su Jumis susipažinti! Susitiksime prie kavos puodelio ir aptarsime Jūsų šventės detales :)</p>
-            
-
             <a href="#contact" class="section-link">Parašykite man ></a>
           </div>
-          
         </div>
       </section>
-      
-
       <!-- SUSISIEKIME SECTION-->
       <section class="contact-section" id="contact">
         
         <div class="contact">
           <div class="contact__part">
             <h2 class="contact__header">Susisiekime</h2>
-            
             <a class="contact__method-link" href="tel:+37067457838">
               <div class="contact__method-link-wrapper">
                 <span class="contact__icon fa-solid fa-square-phone fa-2x"></span>
                 <span class="contact__method-text">+370 674 57838</span>
               </div>
             </a>
-            
             <a class="contact__method-link" href="mailto:vaida.cek@gmail.com">
               <div class="contact__method-link-wrapper">
                 <span class="contact__icon fa-solid fa-square-envelope fa-2x"></span>
                 <span class="contact__method-text">vaida.cek@gmail.com</span>
-              </div>              
+              </div>
             </a>
-
             <div class="contact__spacer"></div>
-
             <h2 class="contact__header">Mane rasite</h2>
-
             <a class="contact__method-link" href="https://www.instagram.com/vaida_cekaviciute/" target="_blank">
               <div class="contact__method-link-wrapper">
                 <span class="contact__icon fa-brands fa-instagram-square fa-2x"></span>
                 <span class="contact__method-text">vaida_cekaviciute</span>
               </div>
             </a>
-            
-
             <a class="contact__method-link" href="https://www.facebook.com/vaidacekaviciutephotography" target="_blank">
               <div class="contact__method-link-wrapper">
                 <span class="contact__icon fa-brands fa-facebook-square fa-2x"></span>
                 <span class="contact__method-text">vaidacekaviciutephotography</span>
               </div>
             </a>
-            
-            
           </div>
-          
-
           <div class="contact__part">
             <h2 class="contact__header">Parašykite man</h2>
-
             <form action="#" method="POST" class="contact__form" id="contactForm">
-            
-              
               <div class="contact__form-field">
                 <label class="contact__form-label" for="name">Jūsų vardas:</label>
                 <input class="contact__form-input contact__form-input--text" type="text" id="name" name="name" placeholder="Vardas" required>
-              </div>              
-              
+              </div>
               <div class="contact__form-field">
                 <label class="contact__form-label" for="email">Jūsų el. paštas:</label>
                 <input class="contact__form-input contact__form-input--text" type="email" id="email" name="email" placeholder="elektroninis@paštas.com" required>
               </div>
-
               <!--
               <div class="contact__form-field">
                 <label class="contact__form-label" for="date">Fotosesijos data:</label>
                 <input class="contact__form-input" type="date" id="date" name="date" value="" min="2022-01-01" max="2030-12-31">
               </div>
               -->
-
               <div class="contact__form-field">
                 <label class="contact__form-label" for="message">Jūsų žinutė:</label>
                 <textarea class="contact__form-input contact__form-input--text" id="message" name="message" rows="5" cols="50" required></textarea>
               </div>
-
               <div class="contact__form-field">
                 <input class="contact__form-input contact__form-input--btn" type="submit" value="Siųsti" id="submitBtn">
               </div>
               <span id="submitMsg">Jūsų žinutė sėkmingai išsiųsta</span>
-              
             </form>
-
-          </div>          
-      
+          </div>
         </div>
-        
       </section>
-     
-
     </main>
-
     <footer class="footer">
-
     </footer>
-  
   </div>
-
-
   <script src="./js/script.js"></script>
-
-  <!-- Form submition formsubmit.co + jQuery AJAX -->  
+  <!-- Form submition formsubmit.co + jQuery AJAX -->
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
